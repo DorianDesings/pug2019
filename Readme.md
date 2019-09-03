@@ -130,6 +130,36 @@ Sintaxis:
       equivale a
 
       if !username
+
+  Bucles
+    Existen dos bucles en pug
+      each:
+        Sirve para recorrer elementos
+          -const names = ['dorian', 'laura', 'marta', 'carlos']
+           each name in names
+        Tenemos la opción de añadir un segundo valor que sería el index en los arrays y el key en objetos
+          each name, index in names
+          each value, key in object
+
+        También podemos establecer un "caso contrario" por si no hubiera elementos que recorrer
+        -const names = []
+        each name in names.length ? names : ['No names']
+          p= name
+
+        each name in names
+          p= name
+        else
+          p= 'no names'
+
+    while
+      - let n = 0;
+        ul
+          while n < 4
+          li= n++
+
+
+
+
   
        
 

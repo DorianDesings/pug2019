@@ -6,9 +6,35 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title Document
 
-  -let username = false
   body
-    unless !username
-      p Registrese para continuar
+    -const names = ['dorian', 'laura', 'marta', 'carlos']
+    //- -const names = []
 
+    //- each name in names
+    //-   p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
+
+    //- each name in names.length ? names : ['No names']
+    //-   p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
+
+    //- each name in names
+    //-   p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
+    //- else
+    //-   span No names
+
+    //- -
+    //-   const person = {
+    //-     name:'Dorian',
+    //-     email: 'dorian@gmail.com'
+    //-   }
+
+    //- each value, key in person 
+    //-   p= `${key}: ${value}`
+
+    //- each value, index in names 
+    //-   p= `${index+1}: ${value}`
+
+    -let n = 0
+      ul
+        while n<5
+          li= n++
 
