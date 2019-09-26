@@ -157,7 +157,11 @@ Sintaxis:
           while n < 4
           li= n++
 
-
+//CORRECCIÓN DEL PACKAJE.JSON
+  Debeis realizar 2 instalaciones:
+  npm i @babel/register
+  npm i @babel/core
+  Eliminad el archivo .babelrc
 
 
   
