@@ -1,6 +1,9 @@
 extends ../templates/template
 
-block header
-    h1 Hola
+prepend header
+append header
+    h2 Subtitle
 
-
+block main
+    each name in names
+        p= name
