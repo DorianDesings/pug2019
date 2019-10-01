@@ -1,9 +1,12 @@
 extends ../templates/template
+include ../mixins/link
+include ../mixins/list
 
 prepend header
 append header
     h2 Subtitle
 
 block main
-    each name in names
-        p= name
+    +link('/enlace', 'enlace')
+    ul
+        +list(names)
