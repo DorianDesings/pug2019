@@ -16,7 +16,7 @@
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/register": "^7.6.2",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1"
